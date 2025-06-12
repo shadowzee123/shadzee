@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DIF JavaScript Practice</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>💡 JavaScript Basics</h1>
+  <button onclick="showTypes()">Show Data Types</button>
+  <button onclick="loopArray()">Loop Through Array</button>
+  <div id="output"></div>
+</div>
+
+<script>
+  function showTypes() {
+    let myName = "Abba";
+    let age = 25;
+    let isStudent = true;
+    let nullValue = null;
+    let undefinedValue;
+
+    document.getElementById("output").textContent = 
+      "Name: " + myName + "\n" +
+      "Age: " + age + "\n" +
+      "Is Student: " + isStudent + "\n" +
+      "Null Value: " + nullValue + "\n" +
+      "Undefined Value: " + undefinedValue;
+  }
+
+  function loopArray() {
+    const numbers = [1, 2, 3, 4, 5];
+    let result = "Looping through array:\n";
+    for (let i = 0; i < numbers.length; i++) {
+      result += "Index " + i + ": " + numbers[i] + "\n";
+    }
+    document.getElementById("output").textContent = result;
+  }
+</script>
+
+</body>
+</html>
